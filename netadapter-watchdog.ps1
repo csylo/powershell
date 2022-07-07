@@ -1,4 +1,4 @@
-#restarts network adapter since steam downloads cuts my connection to the default gateway when hitting 60mb/s
+#restarts network adapter since steam downloads cuts my connection when hitting 60mb/s
 
 "netadapter watchdog on"
 $loopCount = 0
