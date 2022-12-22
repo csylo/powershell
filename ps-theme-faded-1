@@ -1,6 +1,6 @@
 $colors = @{
   "Command" = "FFFFFF"
-  "Comment" = "008000"
+  "Comment" = "00A500"
   "ContinuationPrompt" = "FFFFFF"
   "DefaultToken" = "FFFFFF"
   "Emphasis" = "85F8FF"
@@ -15,5 +15,20 @@ $colors = @{
   "Variable" = "FFFF85"
 }
 Set-PSReadLineOption -Colors $colors
-Get-PSReadlineOption
-"Profile at $profile"
+write-host "Profile at C:\Users\christopher.lo\OneDrive - Viking\Documents\WindowsPowerShell"
+write-host "Current colors at Get-PSReadLineOption"
+$banner = @"
+
+▐░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+▐░░░████████░░████████░░░░░░▒▒▒░░▒░░▒▒░░▒▒▒░▒▒░░░░░
+▐░░░██░░░░██░░██░░░░░░░░░░░▒▓▓▓▒▒▓▒▒▓▓▒▒▓▓▓▒▓▓▒░░░░
+▐░░░██░░░░██░░██░░░░░░░░░░░▒▓▒▒▒▓▒▓▒▓▒▓▒▓▒▒▒▓▒▓▒░░░
+▐░░░████████░░████████░░░░░▒▓▓▓▒▓▓▓▒▓▒▓▒▓▓▒▒▓▒▓▒░░░
+▐░░░██░░░░░░░░░░░░░░██░░░░░▒▓▒░▒▓▒▓▒▓▒▓▒▓▒▒▒▓▒▓▒░░░
+▐░░░██░░░░░░░░░░░░░░██░░░░░▒▓▒░▒▓▒▓▒▓▓▒▒▓▓▓▒▓▓▒░░░░
+▐░░░██░░░░░░░░████████░░░░░░▒░░░▒░▒░▒▒░░▒▒▒░▒▒░░░░░
+▐░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ 
+"@
+
+write-host -foregroundcolor "Cyan" $banner;
