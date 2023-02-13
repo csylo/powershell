@@ -1,0 +1,92 @@
+$colors = @{
+  "Command" = "FFFFFF"
+  "Comment" = "00A500"
+  "ContinuationPrompt" = "FFFFFF"
+  "Default" = "FFFFFF"
+  "Emphasis" = "85F8FF"
+  "Error" = "FE8282"
+  "Keyword" = "83FF85"
+  "ListPredictionSelected" = "FEC682"
+  "Member" = "FEC682"
+  "Number" = "FEC682"
+  "Operator" = "ADA295"
+  "Parameter" = "ADA295"
+  "String" = "ED82FE"
+  "Type" = "6AC2FF"
+  "Variable" = "FFFF85"
+}#█▓▒░•▪·.
+Set-PSReadLineOption -Colors $colors
+$banner1 = @"
+                                                       ___     
+                                                    ,o88888    
+                                                 ,o8888888'    
+                           ,:o:o:oooo.        ,8O88Pd8888"     
+                       ,.::.::o:ooooOoOoO. ,oO8O8Pd888'"       
+                     ,.:.::o:ooOoOoOO8O8OOo.8OOPd8O8O"         
+                    , ..:.::o:ooOoOOOO8OOOOo.FdO8O8"           
+                   , ..:.::o:ooOoOO8O888O8O,COCOO"             
+                  , . ..:.::o:ooOoOOOO8OOOOCOCO"               
+                   . ..:.::o:ooOoOoOO8O8OCCCC"o                
+                      . ..:.::o:ooooOoCoCCC"o:o                
+                      . ..:.::o:o:,cooooCo"oo:o:               
+                   ``   . . ..:.:cocoooo"'o:o:::'              
+                   .``   . ..::ccccoc"'o:o:o:::'               
+                  :.:.    ,c:cccc"':.:.:.:.:.'                 
+                ..:.:"'``::::c:"'..:.:.:.:.:.'                 
+              ...:.'.:.::::"'    . . . . .'                    
+             .. . ....:."' ``   .  . . ''                      
+           . . . ...."'                                        
+           .. . ."'                                            
+          .                                                    
+
+"@
+$banner2 = @"
+
+                                                     ▓█████    
+                                                  ▓███████     
+                            ▒▓▒▓▒▓▓▓▓░         ████░░████░     
+                        ░▒▒░▒▒▓▒▓▓▓▓█▓█▓█░  ▓████░░███ ░       
+                      ░▒░▒▒▓▒▓▓█▓█▓███████▓░███░░████░         
+                      ░░▒░▒▒▓▒▓▓█▓█████████▓▒▒░████░           
+                     ░░▒░▒▒▓▒▓▓█▓██████████ █████░             
+                    ░ ░░▒░▒▒▓▒▓▓█▓█████████████░               
+                   ░ ░░▒░▒▒▓▒▓▓█▓█▓██████████░▓        PlanetShell
+                      ░ ░░▒░▒▒▓▒▓▓▓▓█▓█▓███░▓▒▓           $($PSVersionTable.PSVersion)  
+                      ░ ░░▒░▒▒▓▒▓▒▒▓▓▓▓▓█▓░▓▓▒▓▒             
+                        ░ ░ ░░▒░▒▓▓▓▓▓▓▓░ ▓▒▓▒▒▒               
+                   ░     ░ ░░▒▒▓▓▓▓▓▓░ ▓▒▓▒▓▒▒▒                
+                  ▒░▒░     ▒▒▓▓▓▓░ ▒░▒░▒░▒░▒░                  
+                ░░▒░▒░   ▒▒▒▒▓▒░ ░░▒░▒░▒░▒░▒░                  
+              ░░░▒░ ░▒░▒▒▒▒░     ░ ░ ░ ░ ░                     
+             ░░ ░ ░░░░▒░░       ░  ░ ░                         
+           ░ ░ ░ ░░░░░                                         
+          ░░░ ░ ░░                                                                                            
+
+"@
+#█▓▒░
+#Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow, White;
+cls;
+write-host -foregroundcolor "yellow" $banner4;
+
+#$animation = @"
+#██░░░░░░░░░░░░░░░░░░
+##
+#▓▓██░░░░░░░░░░░░░░░░
+##
+#"@
+#
+#$frames = $animation.Split("#").Trim()
+#
+#$animationLoopNumber = 3 # number of times to loop animation
+#
+#$animationSpeed = 15 # time in milliseconds to show each frame
+#
+#$i = 0
+#
+#do{
+#  foreach($frame in $frames){
+#    Write-Host -foregroundcolor "Cyan" "`r$frame" -NoNewline;
+#    Start-Sleep -Milliseconds $animationSpeed
+#  }
+#  $i++
+#} until ($i -eq $animationLoopNumber)
